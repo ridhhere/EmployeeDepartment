@@ -9,8 +9,6 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Table(name = "Department")
 @Data
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class DepartmentEntity {
@@ -27,4 +25,5 @@ public class DepartmentEntity {
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	@JoinColumn(name = "dno", referencedColumnName = "dno")
 	private Set<EmployeeEntity> employee;
+	
 }

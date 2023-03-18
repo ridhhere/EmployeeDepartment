@@ -10,8 +10,6 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 @Table(name="Employee")
 @Data
-@Getter
-@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmployeeEntity {
@@ -26,5 +24,4 @@ public class EmployeeEntity {
 	private String eadd;
 	@Column(name="DNO")
 	private Long dno;
-
 }
